@@ -717,7 +717,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table-cell;
   vertical-align: middle;
   height: 270px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -966,6 +966,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-footer {
   padding: 50px 0;
   float: left;
+  text-align: center;
   width: 100%;
 }
 #fh5co-footer p:last-child {
@@ -1288,4 +1289,10 @@ input[type="text"] {
 }
 .text-profile-skill:not(:last-child):after {
   content: ' •';
+}
+h3.photo-caption {
+  font-size: 18px !important;
+}
+span.emoji {
+  font-size: 32px !important;
 }
