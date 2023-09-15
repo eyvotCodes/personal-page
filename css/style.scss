@@ -4,12 +4,14 @@ $profile-text-color: #FFFFFF;
 $content-background-color: #EEEEEE;
 $content-text-color: #000000;
 $content-emphasis-color: #0A009D;
-$photos-background-color: #252525CC;
+$photos-background-color: #252525DA;
+$content-text-selection-background: #FFB197;
 
 /* Sizes */
 $profile-picture-size: 160px;
 $profile-icons-size: 24px;
-$content-font-size: 18px;
+$content-font-size: 16px;
+$content-sides-padding: 20px;
 
 /* Fonts */
 // $content-font-family-alt: "Space Mono", monospace;
@@ -101,9 +103,9 @@ h2, h3, h4, h5, h6, figure {
   margin: 0 0 20px 0;
 }
 
-::-webkit-selection, ::-moz-selection, ::selection {
+::selection {
   color: $content-text-color;
-  background: $content-emphasis-color;
+  background: $content-text-selection-background;
 }
 
 #fh5co-header, .fh5co-cover {
@@ -111,7 +113,7 @@ h2, h3, h4, h5, h6, figure {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  height: 600px;
+  height: 100vh;
   width: 100%;
 }
 
@@ -132,7 +134,7 @@ h2, h3, h4, h5, h6, figure {
 #fh5co-header .display-tc, .fh5co-cover .display-tc {
   display: table-cell;
   vertical-align: middle;
-  height: 600px;
+  height: 100vh;
 }
 
 #fh5co-header .display-tc {
@@ -1062,10 +1064,17 @@ h2, h3, h4, h5, h6, figure {
 }
 
 h3.photo-caption {
+  padding-left: 36px;
+  padding-right: 36px;
   font-size: 18px !important;
   color: $profile-text-color;
 }
 
 span.emoji {
   font-size: 32px !important;
+}
+
+.container {
+  padding-left: $content-sides-padding;
+  padding-right: $content-sides-padding;
 }
