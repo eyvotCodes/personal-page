@@ -8,9 +8,12 @@ $photos-background-color: #252525CC;
 
 /* Sizes */
 $profile-picture-size: 160px;
-$profile-icons-size: 22px;
+$profile-icons-size: 24px;
+$content-font-size: 18px;
 
 /* Fonts */
+// $content-font-family-alt: "Space Mono", monospace;
+$content-font-family: Menlo, Monaco, Consolas, "Liberation Mono", SFMono-Regular, monospace, "Courier New";
 @font-face {
   font-family: 'Venetian';
   src: url("../fonts/eyvot/Venetian.otf") format("opentype");
@@ -18,10 +21,9 @@ $profile-icons-size: 22px;
 
 /* Base */
 body {
-  font-family: "Space Mono", Arial, serif;
+  font-family: $content-font-family;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: $content-font-size;
   color: $content-text-color;
   background: $content-background-color;
   overflow: -moz-scrollbars-none;
@@ -80,21 +82,21 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, figure {
-  font-family: "Space Mono", Arial, serif;
+  font-family: $content-font-family;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
 
 h1 {
   color: $profile-text-color;
-  font-family: "Space Mono", Arial, serif;
+  font-family: $content-font-family;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
 
 h2, h3, h4, h5, h6, figure {
   color: $content-text-color;
-  font-family: "Space Mono", Arial, serif;
+  font-family: $content-font-family;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -182,7 +184,7 @@ h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-header .display-tc h3, .fh5co-cover .display-tc h3 {
-  font-size: 16px;
+  font-size: $content-font-size;
 }
 
 @media screen and (max-width: 768px) {
@@ -258,7 +260,7 @@ h2, h3, h4, h5, h6, figure {
     }
 
     p {
-      font-size: 16px;
+      font-size: $content-font-size;
       color: $profile-text-color;
 
       &:last-child {
@@ -386,11 +388,11 @@ h2, h3, h4, h5, h6, figure {
       display: inline;
       color: $content-background-color;
       background: $profile-background-color;
-      padding: 8px 11px 5px 11px;
-      margin-right: 2px;
+      padding: 10px 12px 8px 12px;
+      margin-right: 1px;
 
       i {
-        font-size: 16px;
+        font-size: $content-font-size;
       }
 
       &:hover {
@@ -607,7 +609,7 @@ h2, h3, h4, h5, h6, figure {
 .company {
   display: block;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: $content-font-size;
   font-weight: normal;
   color: $content-emphasis-color;
 }
@@ -934,8 +936,8 @@ h2, h3, h4, h5, h6, figure {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Space Mono", Arial, serif;
-  font-size: 16px;
+  font-family: $content-font-family;
+  font-size: $content-font-size;
   font-weight: 400;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -1048,7 +1050,7 @@ h2, h3, h4, h5, h6, figure {
 .blog-link {
   background-color: $profile-text-color;
   color: $profile-background-color !important;
-  padding: 4px 16px 4px 16px;
+  padding: 8px 18px 8px 18px;
 }
 
 .text-profile-skill {
