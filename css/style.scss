@@ -1078,3 +1078,10 @@ span.emoji {
   padding-left: $content-sides-padding;
   padding-right: $content-sides-padding;
 }
+
+.scroll-indicator {
+  color: $profile-text-color;
+  &::after {
+    content: '↓';
+  }
+}
