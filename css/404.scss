@@ -1,0 +1,55 @@
+/* Theme */
+$background-color: #252525;
+$text-color: #FFFFFF;
+$text-selection-color: #000000;
+$text-selection-background: #FFB197;
+
+/* Fonts */
+$font-size: 16px;
+$logo-size: 36px;
+$message-size: 72px;
+$font-family: Menlo, Monaco, Consolas, "Liberation Mono", SFMono-Regular, monospace, "Courier New";
+@font-face {
+  font-family: 'Venetian';
+  src: url("/fonts/eyvot/Venetian.otf") format("opentype");
+}
+
+/* Base */
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  background: $background-color;
+  color: $text-color;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
+::selection {
+  color: $text-selection-color;
+  background: $text-selection-background;
+}
+
+/* Content */
+.content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.message {
+  font-size: $message-size;
+}
+.logo {
+  font-size: $logo-size;
+  font-family: 'venetian';
+}
+.link {
+  background-color: $text-color;
+  color: $background-color;
+  padding: 4px 12px 4px 12px;
+  text-decoration: none;
+}
